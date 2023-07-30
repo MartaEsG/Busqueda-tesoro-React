@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
 
+import "./App.css"
+import Matrix from './components/Matrix';
+
+const gallery = [
+  {img: "https://cdn-icons-png.flaticon.com/512/2/2104.png" }, 
+  {img: "https://cdn-icons-png.flaticon.com/512/2/2104.png"}, 
+  {img: "https://cdn-icons-png.flaticon.com/512/2/2104.png"}, 
+  {img: "https://cdn-icons-png.flaticon.com/512/2/2104.png"},
+  {img: "https://cdn-icons-png.flaticon.com/512/2/2104.png"}, 
+  {img: "https://cdn-icons-png.flaticon.com/512/2/2104.png"} 
+]
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-header">
+        <Matrix data = {gallery} />
+      </div>
+      
     </div>
   );
 }
